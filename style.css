@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+
+.flexbox-container-1 {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #f6faff;      
+}
+
+.flexbox-item-01 {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: 'Schibsted Grotesk';
+    padding-left: 30px;
+}
+.flexbox-item-1{
+    padding-left: 80px;
+}
+.flexbox-item-2{
+    min-height: 24px;
+    padding-left: 400px;
+    text-align: center;
+}
+.h1link{  
+    text-decoration: none;
+    font-weight: bold;
+    color: #00112e;
+}
+.h1link:hover{
+    color: #00358d;
+}
+.terms{
+    background-color: #f0f5fc;
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Schibsted Grotesk';
+    color: #335da3;
+    size: 12px;
+    line-height: 1rem;
+    font-weight: 500;
+}
+.freight{
+    display: flex;
+    font-family: 'Schibsted Grotesk';
+    color: #00112e;
+    font-size: 104px;
+    line-height: 20px;
+    font-weight: 700;
+    padding-top: 10px;
+    border: #6685ba;
+    box-sizing: border-box;
+}
+.freight-video{
+    width: 100%;
+    height: 400px;
+    border-top-right-radius: 80px;
+}
+.different{
+    background-color: #00358d;
+}
