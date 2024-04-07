@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
 
+body{
+    overflow-x: hidden;
+}
 .flexbox-container-1 {
     display: flex;
     justify-content: flex-end;
-    background-color: #f6faff;      
+    background-color: #f6faff;   
 }
-
 .flexbox-item-01 {
     width: 300px;
     display: flex;
@@ -40,22 +42,160 @@
     line-height: 1rem;
     font-weight: 500;
 }
-.freight{
-    display: flex;
+.section-1{
+    margin-left: 80px;
+}
+.freight-text{
     font-family: 'Schibsted Grotesk';
     color: #00112e;
     font-size: 104px;
-    line-height: 20px;
+    line-height: 5px;
     font-weight: 700;
-    padding-top: 10px;
-    border: #6685ba;
-    box-sizing: border-box;
+    z-index: 2;
+}
+.freight{
+    display: flex;
+    justify-content: start;
+    /* border: #6685ba; */
+}
+.freight-left{
+    width: 50%;
 }
 .freight-video{
-    width: 100%;
-    height: 400px;
+    width: 600px;
     border-top-right-radius: 80px;
 }
 .different{
+    width: 100%;
     background-color: #00358d;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Schibsted Grotesk';
 }
+.different-left{
+    margin-left: 8%;
+    font-size: 72px;
+    line-height: 80px;
+    font-weight: 500;
+    width: 50%;
+}
+#diff-img{
+    width: 400px;
+    border-radius: 48px;
+}
+.different-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.different-right-head{
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 400;
+}
+.different-right-body{
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+#progress-1{
+    width: 100%;
+    background-color: #335da3;
+}
+#progress-bar-1{
+    width: 1%;
+    height: 1px;
+    background-color: white;
+}
+#progress-2{
+    width: 100%;
+    background-color: #335da3;
+}
+#progress-bar-2{
+    width: 1%;
+    height: 1px;
+    background-color: white;
+}
+#progress-3{
+    width: 100%;
+    background-color: #335da3;
+}
+#progress-bar-3{
+    width: 1%;
+    height: 1px;
+    background-color: white;
+}
+#progress-4{
+    width: 100%;
+    background-color: #335da3;
+}
+#progress-bar-4{
+    width: 1%;
+    height: 1px;
+    background-color: white;
+}
+.gap{
+    height: 80px;
+}
+.our-locations{
+    font-family: 'Schibsted Grotesk';
+    line-height: 48px;
+    font-size: 32px;
+    width: 50%;
+    margin-left: 8%;
+    border-top-right-radius: 50px;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    padding-top: 40px;
+    padding-right: 350px;
+}
+.locations-text{
+    padding-top: 20px;
+}
+.euro{
+    color: #335da3;
+}
+
+#scroll-container {
+    border: 3px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  #scroll-text {
+    /* animation properties */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 15s linear infinite;
+  }
+  
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+}
+
+.hide{display: none;}
+.show{display: block;}

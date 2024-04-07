@@ -5,6 +5,9 @@
     <title>Manuport Logistics: Freight forwarding done different</title>
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 <body>
     <div class="terms">
@@ -39,24 +42,73 @@
             <a class="h1link" href="">Contact</a>
         </div>
     </div>
-    <div class="freight">
-        <div class="freight-left">
-            <p>Freight</p> 
+    <div class="section-1">
+        <div class="freight-text">
+            <p>Freight </p> 
             <p>forwarding.</p>
             <p>Done different.</p>
         </div>
-        <div class="freight-right">
-            <video src="https://a.storyblok.com/f/240783/x/1b03c229b0/peoplev4_compressed.mp4" class="freight-video" playsinline autoplay muted loop></video>
+        <div class="freight"> 
+            </div>
+            <div class="freight-right">
+                <video src="https://a.storyblok.com/f/240783/x/1b03c229b0/peoplev4_compressed.mp4" class="freight-video" playsinline autoplay muted loop></video>
+            </div>
         </div>
     </div>
     <div class="different">
         <div class="different-left">
             <p>We're Different Because</p>
+            <img src="img/diff1.webp" id="diff-img">
         </div>
         <div class="different-right">
-            <p>We Believe in People</p>
+            <div class="different-right-1">
+                <a id="visible1" class="different-right-head" onclick="move1()">We Believe in People</a>
+                <p id="invisible1" class="hide" class="different-right-body">
+                    We believe in our people because they are our greatest asset. At MPL, we are not just a company; we are a 
+                    <b>family</b>
+                    . Each and every one of us shares our unique MPL culture, in which everyone is valued, supported, and empowered to reach their full potential.
+                </p>
+                <div id="progress-1">
+                    <div id="progress-bar-1"></div>
+                </div>
+            </div>
+            <div class="different-right-2">
+                <a id="visible2" class="different-right-head" onclick="move2()">We Solve Each and Any Shipping Problem</a>
+                <p id="invisible2" class="hide" class="different-right-body">
+                    We work with teams per commodity, each with specific domain expertise, to provide high-quality solutions or knowledge for any product or request. With offices around the world, we have excellent knowledge of local markets, laws, and customs.
+                </p>
+                <div id="progress-2">
+                    <div id="progress-bar-2"></div>
+                </div>
+            </div>
+            <div class="different-right-3">
+                <a id="visible3" class="different-right-head" onclick="move3()">Single Point of Contact</a>
+                <p id="invisible3" class="hide" class="different-right-body">
+                    Our colleagues assist and guide customers from end to end in all logistics processes, including customs clearance and tender and procurement services.
+                </p>
+                <div id="progress-3">
+                    <div id="progress-bar-3"></div>
+                </div>
+            </div>
+            <div class="different-right-4">
+                <a id="visible4" class="different-right-head" onclick="move4()">Flexible & Fast Decision-Making</a>
+                <p id="invisible4" class="hide" class="different-right-body">
+                    Our flexibility and desire to help customers in any way possible really sets us apart. Our fast decision-making comes from the open internal communication strategy we follow.
+                </p>
+                <div id="progress-4">
+                    <div id="progress-bar-4"></div>
+                </div>
+            </div>
         </div>
-
+    </div> 
+    <div class="gap"></div>
+    <div class="our-locations">
+        <p class="locations-text">
+            Around the world, our teams are dedicated to meeting your logistics needs. As part of the <a class="euro" href="https://www.euroports.com">Euroports Group</a>, we can leverage group assets to support our solutions and add financial stability and flexibility, which is all to your benefit. Spin the globe and find your location. 
+        </p>
+    </div>
+    <div id="scroll-container">
+        <div id="scroll-text">This is scrolling text.<div>
     </div>
 </body>
 </html>
