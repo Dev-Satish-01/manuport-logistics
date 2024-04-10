@@ -105,3 +105,46 @@ document.addEventListener("DOMContentLoaded", function() {
         invisible4.classList.toggle("show");
     });
 });
+
+var imageUrls1 = [
+    "img/diff1.webp",
+    "img/diff2.webp",
+    "img/diff3.png",
+    "img/diff4.webp",
+];
+
+function diffimg() {
+    var rotatingImage = document.getElementById("diffimg");
+    var currentIndex = 0;
+    rotatingImage.src = imageUrls1[currentIndex];
+
+    setInterval(function() {
+        currentIndex = (currentIndex + 1) % imageUrls1.length; // Loop back to the beginning if at the end
+        rotatingImage.src = imageUrls1[currentIndex];
+    }, 3000);
+}
+
+var imageUrls2 = [
+    "img/move1.webp",
+    "img/move2.webp",
+    "img/move3.webp",
+    "img/move4.webp",
+    "img/move5.webp",
+];
+
+function moveimg() {
+    var rotatingImage = document.getElementById("moveimg");
+    var currentIndex = 0;
+    rotatingImage.src = imageUrls2[currentIndex];
+
+    setInterval(function() {
+        currentIndex = (currentIndex + 1) % imageUrls2.length;
+        rotatingImage.src = imageUrls2[currentIndex];
+    }, 3000);
+}
+
+function img() {
+    diffimg();
+    moveimg();
+}
+window.onload = img;
