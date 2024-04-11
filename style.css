@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
 
-*{
+* {
     margin-left: 0;
     margin-right: 0;
 }
-body{
+
+body {
     overflow-x: hidden;
     overflow: overlay;
 }
+
 .flexbox-container-1 {
+    margin: 0;
+    height: 100px;
     display: flex;
     justify-content: flex-end;
-    background-color: #f6faff;   
+    background-color: #f6faff;
 }
+
 .flexbox-item-01 {
     width: 300px;
     display: flex;
@@ -21,23 +26,28 @@ body{
     font-family: 'Schibsted Grotesk';
     padding-left: 30px;
 }
-.flexbox-item-1{
+
+.flexbox-item-1 {
     padding-left: 80px;
 }
-.flexbox-item-2{
+
+.flexbox-item-2 {
     min-height: 24px;
     padding-left: 400px;
     text-align: center;
 }
-.h1link{  
+
+.h1link {
     text-decoration: none;
     font-weight: bold;
     color: #00112e;
 }
-.h1link:hover{
+
+.h1link:hover {
     color: #00358d;
 }
-.terms{
+
+.terms {
     background-color: #f0f5fc;
     display: flex;
     justify-content: flex-end;
@@ -47,29 +57,62 @@ body{
     line-height: 1rem;
     font-weight: 500;
 }
-.section-1{
+
+.section-1 {
     margin-left: 80px;
 }
-.freight-text{
+
+.freight-text {
+    font-family: 'Schibsted Grotesk';
+    color: #00112e;
+    font-size: 104px;
+    line-height: 5px;
+    font-weight: 700;
+    position: absolute;
+    top: 25%;
+    right: 45%;
+}
+
+.freight {
+    display: flex;
+    border: #6685ba;
+}
+
+.done-different {
+    display: flex;
+}
+
+.text-diff {
+    font-style: italic;
+    padding-left: 20px;
+    color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+}
+
+.freight-left {
+    width: 44%;
+    z-index: 2;
     font-family: 'Schibsted Grotesk';
     color: #00112e;
     font-size: 104px;
     line-height: 5px;
     font-weight: 700;
 }
-.freight{
-    display: flex;
-    justify-content: start;
-    /* border: #6685ba; */
+
+.freight-right {
+    padding-top: 0px;
 }
-.freight-left{
-    width: 50%;
-}
-.freight-video{
+
+.freight-video {
     width: 600px;
+    height: 800px;
+    object-fit: cover;
+    z-index: -100;
     border-top-right-radius: 80px;
 }
-.different{
+
+.different {
     width: 100%;
     height: 700px;
     background-color: #00358d;
@@ -80,24 +123,31 @@ body{
     padding-top: 50px;
     border-top-left-radius: 40px;
 }
-.different-left{
+
+.different-left {
     margin-left: 8%;
     font-size: 72px;
     line-height: 80px;
     font-weight: 500;
     width: 50%;
 }
-#diffimg{
+
+#diffimg {
     width: 400px;
     border-radius: 60px;
     padding-top: 20px;
 }
-#moveimg{
+
+#moveimg {
     width: 600px;
     padding-top: 20px;
     z-index: 2;
+    position: absolute;
+    top: 405%;
+    right: 14%;
 }
-.different-right{
+
+.different-right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -106,57 +156,69 @@ body{
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.different-right-head{
+
+.different-right-head {
     font-size: 32px;
     line-height: 40px;
     font-weight: 400;
 }
-.different-right-body{
+
+.different-right-body {
     font-size: 16px;
     line-height: 32px;
     font-weight: 400;
 }
-#progress-1{
+
+#progress-1 {
     width: 100%;
     background-color: #335da3;
 }
-#progress-bar-1{
+
+#progress-bar-1 {
     width: 1%;
     height: 1px;
     background-color: white;
 }
-#progress-2{
+
+#progress-2 {
     width: 100%;
     background-color: #335da3;
 }
-#progress-bar-2{
+
+#progress-bar-2 {
     width: 1%;
     height: 1px;
     background-color: white;
 }
-#progress-3{
+
+#progress-3 {
     width: 100%;
     background-color: #335da3;
 }
-#progress-bar-3{
+
+#progress-bar-3 {
     width: 1%;
     height: 1px;
     background-color: white;
 }
-#progress-4{
+
+#progress-4 {
     width: 100%;
     background-color: #335da3;
 }
-#progress-bar-4{
+
+#progress-bar-4 {
     width: 1%;
     height: 1px;
     background-color: white;
 }
-.gap{
+
+.gap {
     height: 200px;
     background-color: #f6faff;
 }
-.our-locations{
+
+.our-locations {
     font-family: 'Schibsted Grotesk';
     line-height: 48px;
     font-size: 32px;
@@ -168,10 +230,13 @@ body{
     padding-top: 40px;
     padding-right: 350px;
 }
-.locations-text{
+
+.locations-text {
     padding-top: 20px;
+    padding-bottom: 30px;
 }
-.euro{
+
+.euro {
     color: #335da3;
 }
 
@@ -179,61 +244,77 @@ body{
     border: 3px solid black;
     border-radius: 5px;
     overflow: hidden;
-  }
-  
-  .scroll-text {
+}
+
+.scroll-text {
     /* animation properties */
     -moz-transform: translateX(100%);
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
-    
+
     -moz-animation: my-animation 30s linear infinite;
     -webkit-animation: my-animation 30s linear infinite;
     animation: my-animation 30s linear infinite;
-  }
-  
-  @-webkit-keyframes my-animation {
-    from { -webkit-transform: translateX(100%); }
-    to { -webkit-transform: translateX(-100%); }
-  }
-  
-  @keyframes my-animation {
+}
+
+@-webkit-keyframes my-animation {
     from {
-      -moz-transform: translateX(100%);
-      -webkit-transform: translateX(100%);
-      transform: translateX(100%);
+        -webkit-transform: translateX(100%);
     }
+
     to {
-      -moz-transform: translateX(-100%);
-      -webkit-transform: translateX(-100%);
-      transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
     }
 }
 
-.hide{display: none;}
-.show{display: block;}
+@keyframes my-animation {
+    from {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
 
-.scrollimg{
+    to {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.scrollimg {
     width: 30px;
     border-radius: 5px;
 }
-.scroll-text-1{
+
+.scroll-text-1 {
     font-family: 'Schibsted Grotesk';
     font-size: 40px;
     line-height: 48px;
 }
-.sec{
+
+.sec {
     background-color: #f6faff;
 }
-.move{
+
+.move {
     display: flex;
-    background-color: #f6faff;  
+    background-color: #f6faff;
     margin-left: 14%;
 }
-.move-left{
+
+.move-left {
     width: 40%;
 }
-.move-left-head{
+
+.move-left-head {
     padding-top: 200px;
     font-family: 'Schibsted Grotesk';
     font-size: 56px;
@@ -241,15 +322,18 @@ body{
     color: #00235d;
     font-weight: 500;
 }
-.move-left-body{
+
+.move-left-body {
     font-family: 'Schibsted Grotesk';
     font-size: 20px;
     line-height: 32px;
     color: #00112e;
     font-weight: 400;
     padding-top: 30px;
+    padding-bottom: 20px;
 }
-.whitespace{
+
+.whitespace {
     width: 400px;
     height: 400px;
     padding: 50px;
@@ -267,13 +351,105 @@ body{
     background: grey;
     border-radius: 20px;
     border: 2px solid transparent;
-    background-clip: padding-box; 
+    background-clip: padding-box;
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
     border: 0;
 }
 
 ::-webkit-scrollbar-track {
     background: transparent;
+}
+
+ico {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+ico.btn-upload:after {
+    box-sizing: border-box;
+    display: block;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border: 2px solid #335da3;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 0;
+    background-color: #335da3;
+}
+
+ico.btn-upload:hover n {
+    transform: translateX(2px);
+}
+
+ico.btn-upload n {
+    /*arrow tail*/
+    display: block;
+    width: 38px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: 50%;
+    top: 62%;
+    margin-left: -1px;
+    transform: translateX(60px);
+    transition: 0.4s;
+    z-index: 2;
+}
+
+ico.btn-upload n:after,
+ico.btn-upload n:before {
+    /*arrow head*/
+    content: "";
+    width: 20px;
+    height: 1.5px;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transform-origin: 0 0;
+    transform: rotate(-45deg);
+}
+
+ico.btn-upload n:before {
+    transform-origin: 0px 0px;
+    transform: rotate(45deg);
+}
+
+.btn {
+    display: flex;
+    border: solid 2px #6685ba;
+    width: 190px;
+    height: 60px;
+    border-radius: 40px;
+}
+
+.btn-text {
+    display: flex;
+    padding-top: 14px;
+    padding-left: 20px;
+    font-family: 'Schibsted Grotesk';
+    color: #00358d;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+.icons {
+    padding-left: 20px;
+}
+
+.btn1 {
+    display: flex;
+    border: solid 2px #6685ba;
+    width: 260px;
+    height: 60px;
+    border-radius: 40px;
 }
