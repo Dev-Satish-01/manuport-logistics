@@ -143,8 +143,35 @@ function moveimg() {
     }, 3000);
 }
 
+var imageUrls3 = [
+    "img/w1.webp",
+    "img/w2.webp",
+    "img/w3.webp",
+    "img/w4.webp",
+    "img/w5.webp",
+    "img/w6.webp",
+    "img/w7.webp",
+    "img/w8.webp",
+    "img/w9.webp",
+    "img/w10.webp",
+    "img/w11.webp",
+    "img/w12.webp",
+];
+
+function whatimg() {
+    var rotatingImage = document.getElementById("whatimg");
+    var currentIndex = 0;
+    rotatingImage.src = imageUrls3[currentIndex];
+
+    setInterval(function() {
+        currentIndex = (currentIndex + 1) % imageUrls3.length;
+        rotatingImage.src = imageUrls3[currentIndex];
+    }, 3000);
+}
+
 function img() {
     diffimg();
     moveimg();
+    whatimg();
 }
 window.onload = img;
