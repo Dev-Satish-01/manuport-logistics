@@ -486,6 +486,13 @@ ico.btn-upload n:before {
     height: 60px;
     border-radius: 40px;
 }
+.btn3 {
+    display: flex;
+    border: solid 2px #6685ba;
+    width: 320px;
+    height: 60px;
+    border-radius: 40px;
+}
 .what{
     display: flex;
     padding-top: 60px;
@@ -520,9 +527,11 @@ ico.btn-upload n:before {
 }
 .log{
     display: flex;
+    padding-top: 200px;
 }
 .log-left{
     margin-left: 10%;
+    margin-top: 14%;
     width: 500px;
 }
 .log-head{
@@ -530,12 +539,19 @@ ico.btn-upload n:before {
     font-size: 40px;
     line-height: 48px;
     font-weight: 500;
+    color: #00235d;
+    padding-bottom: 10px;
 }
 .log-body{
     font-family: 'Schibsted Grotesk';
     font-size: 18px;
     line-height: 32px;
+    color: #00112e;
+    padding-bottom: 15px;
 }
 .log-right{
-
+    margin-left: 12%;
+}
+#logimg{
+    border-bottom-left-radius: 100px;
 }
