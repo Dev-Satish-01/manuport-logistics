@@ -627,4 +627,59 @@ ico.btn-upload n:before {
     margin-right: 10%;
     margin-top: 7%;
 }
-
+.team{
+    margin: 2% 3% 4% 5%;
+    height: 1000px;
+    color: #00235d;
+    font-family: 'Schibsted Grotesk';
+    display: flex;
+}
+.team-left{
+    width: 50%;
+}
+.team-head{
+    font-size: 66px;
+    line-height: 1px;
+    font-weight: 700;
+}
+.team-body{
+    font-size: 66px;
+    line-height: 32px;
+    font-weight: 400;
+}
+.team-right{
+    font-size: 66px;
+    line-height: 66px;
+    font-weight: 700;
+    margin-left: 40%;
+}
+.card1{
+    display: flex;
+    width: 800px;
+    border: solid blue 2px;
+    box-shadow: #00112e 2px;
+    z-index: 2;
+}
+.card1img{
+    height: 380px;
+}
+.card2img{
+    height: 380px;
+}
+.card3img{
+    height: 380px;
+}
+.card-right{
+    display: flex;
+    flex-flow: column;
+}
+.card-head{
+    font-size: 40px;
+    line-height: 30px;
+    font-weight: 700;
+}
+.card-body{
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+}
