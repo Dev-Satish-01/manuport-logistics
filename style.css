@@ -555,3 +555,24 @@ ico.btn-upload n:before {
 #logimg{
     border-bottom-left-radius: 100px;
 }
+.company-text{
+    font-family: 'Schibsted Grotesk';
+    font-size: 110px;
+    line-height: 10px;
+    font-weight: 700;
+    z-index: 2;
+    position: absolute;
+    top: 780%;
+    right: 32%;
+    color: white;
+}
+.company-video{
+    width: 90%;
+    height: 600px;
+    object-fit: cover;
+    z-index: -100;
+    border-top-right-radius: 100px;
+}
+.gap-c{
+    height: 240px;
+}
