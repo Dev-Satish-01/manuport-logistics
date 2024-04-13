@@ -1,3 +1,26 @@
+document.addEventListener("DOMContentLoaded", function () {
+    var preloader = document.getElementById("preloader");
+
+    setTimeout(function () {
+        preloader.style.display = "none";
+        content.style.display = "block";
+    }, 5000);
+});
+
+function autoIncrement() {
+    let currentPercentage = 0;
+    const percentageDisplay = document.getElementById('percentageDisplay');
+    setInterval(function () {
+        currentPercentage += 1;
+        if (currentPercentage > 100) {
+            currentPercentage = 100;
+        }
+        percentageDisplay.textContent = currentPercentage + '%';
+    }, 42);
+}
+
+autoIncrement();
+
 function move1() {
     var i = 0;
     if (i == 0) {
@@ -15,7 +38,7 @@ function move1() {
             }
         }
     }
-} 
+}
 function move2() {
     var i = 0;
     if (i == 0) {
@@ -33,7 +56,7 @@ function move2() {
             }
         }
     }
-} 
+}
 function move3() {
     var i = 0;
     if (i == 0) {
@@ -51,7 +74,7 @@ function move3() {
             }
         }
     }
-} 
+}
 function move4() {
     var i = 0;
     if (i == 0) {
@@ -69,39 +92,39 @@ function move4() {
             }
         }
     }
-} 
-document.addEventListener("DOMContentLoaded", function() {
+}
+document.addEventListener("DOMContentLoaded", function () {
     var visible1 = document.getElementById("visible1");
     var invisible1 = document.getElementById("invisible1");
 
-    visible1.addEventListener("click", function() {
+    visible1.addEventListener("click", function () {
         invisible1.classList.toggle("show");
     });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var visible2 = document.getElementById("visible2");
     var invisible2 = document.getElementById("invisible2");
 
-    visible2.addEventListener("click", function() {
+    visible2.addEventListener("click", function () {
         invisible2.classList.toggle("show");
     });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var visible3 = document.getElementById("visible3");
     var invisible3 = document.getElementById("invisible3");
 
-    visible3.addEventListener("click", function() {
+    visible3.addEventListener("click", function () {
         invisible3.classList.toggle("show");
     });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var visible4 = document.getElementById("visible4");
     var invisible4 = document.getElementById("invisible4");
 
-    visible4.addEventListener("click", function() {
+    visible4.addEventListener("click", function () {
         invisible4.classList.toggle("show");
     });
 });
@@ -118,7 +141,7 @@ function diffimg() {
     var currentIndex = 0;
     rotatingImage.src = imageUrls1[currentIndex];
 
-    setInterval(function() {
+    setInterval(function () {
         currentIndex = (currentIndex + 1) % imageUrls1.length; // Loop back to the beginning if at the end
         rotatingImage.src = imageUrls1[currentIndex];
     }, 3000);
@@ -137,7 +160,7 @@ function moveimg() {
     var currentIndex = 0;
     rotatingImage.src = imageUrls2[currentIndex];
 
-    setInterval(function() {
+    setInterval(function () {
         currentIndex = (currentIndex + 1) % imageUrls2.length;
         rotatingImage.src = imageUrls2[currentIndex];
     }, 3000);
@@ -163,7 +186,7 @@ function whatimg() {
     var currentIndex = 0;
     rotatingImage.src = imageUrls3[currentIndex];
 
-    setInterval(function() {
+    setInterval(function () {
         currentIndex = (currentIndex + 1) % imageUrls3.length;
         rotatingImage.src = imageUrls3[currentIndex];
     }, 3000);

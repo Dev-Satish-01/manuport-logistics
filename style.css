@@ -10,6 +10,21 @@ body {
     overflow: overlay;
 }
 
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3498db;
+    z-index: 9999;
+}
+
+#percentageDisplay {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
 .flexbox-container-1 {
     margin: 0;
     height: 100px;
@@ -154,6 +169,7 @@ body {
     top: 405%;
     right: 14%;
 }
+
 #whatimg {
     width: 600px;
     padding-top: 20px;
@@ -458,6 +474,7 @@ ico.btn-upload n:before {
     line-height: 32px;
     font-weight: 600;
 }
+
 .btn2-text {
     display: flex;
     padding-top: 14px;
@@ -468,6 +485,7 @@ ico.btn-upload n:before {
     line-height: 32px;
     font-weight: 600;
 }
+
 .btn4-text {
     display: flex;
     padding-top: 14px;
@@ -478,6 +496,7 @@ ico.btn-upload n:before {
     line-height: 32px;
     font-weight: 600;
 }
+
 .btn5-text {
     display: flex;
     padding-top: 14px;
@@ -500,6 +519,7 @@ ico.btn-upload n:before {
     height: 60px;
     border-radius: 40px;
 }
+
 .btn2 {
     display: flex;
     border: solid 2px #6685ba;
@@ -507,6 +527,7 @@ ico.btn-upload n:before {
     height: 60px;
     border-radius: 40px;
 }
+
 .btn3 {
     display: flex;
     border: solid 2px #6685ba;
@@ -514,6 +535,7 @@ ico.btn-upload n:before {
     height: 60px;
     border-radius: 40px;
 }
+
 .btn4 {
     display: flex;
     border: solid 2px #6685ba;
@@ -522,6 +544,7 @@ ico.btn-upload n:before {
     border-radius: 40px;
     margin-left: 40%;
 }
+
 .btn5 {
     display: flex;
     border: solid 2px #6685ba;
@@ -530,15 +553,18 @@ ico.btn-upload n:before {
     border-radius: 40px;
     margin-left: 40%;
 }
-.what{
+
+.what {
     display: flex;
     padding-top: 60px;
 }
-.what-left{
+
+.what-left {
     background-color: #00358d;
     margin-left: 28%;
 }
-.what-head{
+
+.what-head {
     font-family: 'Schibsted Grotesk';
     font-size: 40px;
     line-height: 48px;
@@ -547,7 +573,8 @@ ico.btn-upload n:before {
     margin-right: 10%;
     margin-top: 16%;
 }
-.what-body{
+
+.what-body {
     font-family: 'Schibsted Grotesk';
     font-size: 18px;
     line-height: 32px;
@@ -555,23 +582,27 @@ ico.btn-upload n:before {
     margin-left: 30%;
     margin-right: 10%;
 }
-.what-right{
+
+.what-right {
     background-color: #00358d;
     width: 80%;
     height: 600px;
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
 }
-.log{
+
+.log {
     display: flex;
     padding-top: 200px;
 }
-.log-left{
+
+.log-left {
     margin-left: 10%;
     margin-top: 14%;
     width: 500px;
 }
-.log-head{
+
+.log-head {
     font-family: 'Schibsted Grotesk';
     font-size: 40px;
     line-height: 48px;
@@ -579,20 +610,24 @@ ico.btn-upload n:before {
     color: #00235d;
     padding-bottom: 10px;
 }
-.log-body{
+
+.log-body {
     font-family: 'Schibsted Grotesk';
     font-size: 18px;
     line-height: 32px;
     color: #00112e;
     padding-bottom: 15px;
 }
-.log-right{
+
+.log-right {
     margin-left: 12%;
 }
-#logimg{
+
+#logimg {
     border-bottom-left-radius: 100px;
 }
-.company-text{
+
+.company-text {
     font-family: 'Schibsted Grotesk';
     font-size: 110px;
     line-height: 10px;
@@ -603,23 +638,27 @@ ico.btn-upload n:before {
     right: 32%;
     color: white;
 }
-.company-video{
+
+.company-video {
     width: 90%;
     height: 600px;
     object-fit: cover;
     z-index: -100;
     border-top-right-radius: 100px;
 }
-.gap-c{
+
+.gap-c {
     height: 240px;
 }
-.heart{
+
+.heart {
     background-color: #08142c;
     color: white;
     height: 750px;
     border-bottom-left-radius: 100px;
 }
-.heart-head{
+
+.heart-head {
     display: flex;
     flex-wrap: wrap;
     margin-right: 10%;
@@ -636,7 +675,8 @@ ico.btn-upload n:before {
     border-bottom-right-radius: 80px;
 
 }
-.heart-body{
+
+.heart-body {
     font-family: 'Schibsted Grotesk';
     font-size: 18px;
     line-height: 32px;
@@ -645,37 +685,44 @@ ico.btn-upload n:before {
     margin-right: 10%;
     margin-top: 7%;
 }
-.bg{
+
+.bg {
     background-color: #f6faff;
 }
-.team{
+
+.team {
     margin: 2% 3% 4% 5%;
     height: 1200px;
     color: #00235d;
     font-family: 'Schibsted Grotesk';
     display: flex;
 }
-.team-left{
+
+.team-left {
     width: 50%;
 }
-.team-head{
+
+.team-head {
     font-size: 66px;
     line-height: 10px;
     font-weight: 700;
 }
-.team-body{
+
+.team-body {
     font-size: 66px;
     line-height: 32px;
     font-weight: 400;
 }
-.team-right{
+
+.team-right {
     font-size: 66px;
     line-height: 66px;
     font-weight: 700;
     margin-left: 20%;
     width: 50%;
 }
-.card1{
+
+.card1 {
     display: flex;
     width: 800px;
     border: solid blue 2px;
@@ -683,7 +730,8 @@ ico.btn-upload n:before {
     box-shadow: #00112e 2px;
     z-index: 2;
 }
-.card2{
+
+.card2 {
     display: flex;
     width: 800px;
     border: solid blue 2px;
@@ -691,7 +739,8 @@ ico.btn-upload n:before {
     box-shadow: #00112e 2px;
     z-index: 2;
 }
-.card3{
+
+.card3 {
     display: flex;
     width: 800px;
     border: solid blue 2px;
@@ -699,36 +748,44 @@ ico.btn-upload n:before {
     box-shadow: #00112e 2px;
     z-index: 2;
 }
-.card1img{
+
+.card1img {
     height: 380px;
     width: 196px;
 }
-.card2img{
+
+.card2img {
     height: 380px;
     width: 196px;
 }
-.card3img{
+
+.card3img {
     height: 380px;
     width: 196px;
 }
-.card-right{
+
+.card-right {
     display: flex;
     flex-flow: column;
 }
-.card-head{
+
+.card-head {
     font-size: 40px;
     line-height: 30px;
     font-weight: 700;
 }
-.card-body{
+
+.card-body {
     font-size: 20px;
     line-height: 20px;
     font-weight: 400;
 }
-.mpl{
+
+.mpl {
     display: flex;
 }
-.mpl-left{
+
+.mpl-left {
     background-color: #00235d;
     color: white;
     width: 64%;
@@ -737,17 +794,20 @@ ico.btn-upload n:before {
     border-bottom-right-radius: 50px;
 
 }
-.mpl-head{
+
+.mpl-head {
     font-family: 'Schibsted Grotesk';
     font-size: 56px;
     line-height: 64px;
     margin-left: 10%;
     margin-top: 10%;
 }
-.mpl-body{
+
+.mpl-body {
     display: flex;
     align-items: start;
 }
-.mpl-right{
+
+.mpl-right {
     height: 00000000000000000;
 }
