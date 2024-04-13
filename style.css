@@ -322,6 +322,7 @@ body {
 
 .move {
     display: flex;
+    flex-wrap: wrap;
     background-color: #f6faff;
     margin-left: 14%;
 }
@@ -467,6 +468,16 @@ ico.btn-upload n:before {
     line-height: 32px;
     font-weight: 600;
 }
+.btn4-text {
+    display: flex;
+    padding-top: 14px;
+    padding-left: 20px;
+    font-family: 'Schibsted Grotesk';
+    color: white;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 600;
+}
 
 .icons {
     padding-left: 20px;
@@ -492,6 +503,14 @@ ico.btn-upload n:before {
     width: 320px;
     height: 60px;
     border-radius: 40px;
+}
+.btn4 {
+    display: flex;
+    border: solid 2px #6685ba;
+    width: 200px;
+    height: 60px;
+    border-radius: 40px;
+    margin-left: 40%;
 }
 .what{
     display: flex;
@@ -576,3 +595,36 @@ ico.btn-upload n:before {
 .gap-c{
     height: 240px;
 }
+.heart{
+    background-color: #08142c;
+    color: white;
+    height: 750px;
+    border-bottom-left-radius: 100px;
+}
+.heart-head{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 10%;
+    font-family: 'Schibsted Grotesk';
+    font-size: 66px;
+    line-height: 66px;
+    font-weight: 700;
+    padding-top: 60px;
+    padding-right: 400px;
+    padding-bottom: 80px;
+    padding-left: 8%;
+    border-bottom: white solid 2px;
+    border-right: white solid 2px;
+    border-bottom-right-radius: 80px;
+
+}
+.heart-body{
+    font-family: 'Schibsted Grotesk';
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+    margin-left: 40%;
+    margin-right: 10%;
+    margin-top: 7%;
+}
+
