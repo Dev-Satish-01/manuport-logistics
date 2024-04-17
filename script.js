@@ -199,3 +199,61 @@ function img() {
 }
 window.onload = img;
 
+function moveElementOnScroll() {
+    const element = document.getElementById('element');
+      // Move the element based on scroll direction
+      if (window.scrollY > 0) {
+          // Move right by 50 pixels, but limit to 100 pixels maximum
+          const newLeft = Math.min(element.offsetLeft + 50, 150); // 150 = 50 + 100 (max right position)
+          element.style.left = newLeft + 'px';
+      } else if (window.scrollY < 0){
+          // Move left by 50 pixels, but limit to original position
+          const newLeft = Math.max(element.offsetLeft - 50, 50); // 50 = original left position
+          element.style.left = newLeft + 'px';
+      }
+  }
+  function moveElementOnScroll1() {
+    const element = document.getElementById('element1');
+      // Move the element based on scroll direction
+      if (window.scrollY > 0) {
+          // Move right by 50 pixels, but limit to 100 pixels maximum
+          const newLeft = Math.min(element.offsetLeft + 50, 450); // 150 = 50 + 100 (max right position)
+          element.style.left = newLeft + 'px';
+      } else {
+          // Move left by 50 pixels, but limit to original position
+          const newLeft = Math.max(element.offsetLeft - 50, 350); // 50 = original left position
+          element.style.left = newLeft + 'px';
+      }
+  }
+  function moveElementOnScroll2() {
+    const element = document.getElementById('element2');
+      // Move the element based on scroll direction
+      if (window.scrollY > 0) {
+          // Move right by 50 pixels, but limit to 100 pixels maximum
+          const newLeft = Math.min(element.offsetLeft + 50, 750); // 150 = 50 + 100 (max right position)
+          element.style.left = newLeft + 'px';
+      } else {
+          // Move left by 50 pixels, but limit to original position
+          const newLeft = Math.max(element.offsetLeft - 50, 650); // 50 = original left position
+          element.style.left = newLeft + 'px';
+      }
+  }
+  function moveElementOnScroll3() {
+    const element = document.getElementById('element3');
+      // Move the element based on scroll direction
+      if (window.scrollY > 0) {
+          // Move right by 50 pixels, but limit to 100 pixels maximum
+          const newLeft = Math.min(element.offsetLeft + 50, 1050); // 150 = 50 + 100 (max right position)
+          element.style.left = newLeft + 'px';
+      } else {
+          // Move left by 50 pixels, but limit to original position
+          const newLeft = Math.max(element.offsetLeft - 50, 950); // 50 = original left position
+          element.style.left = newLeft + 'px';
+      }
+  }
+  
+  window.addEventListener('scroll', moveElementOnScroll);
+  window.addEventListener('scroll', moveElementOnScroll1);
+  window.addEventListener('scroll', moveElementOnScroll2);
+  window.addEventListener('scroll', moveElementOnScroll3);
+  

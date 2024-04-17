@@ -1,6 +1,4 @@
 # manuport-logistics
 Pending:
-Navbar
-Scroll effect
+Navbar,  
 Contact
-Loading Screen
